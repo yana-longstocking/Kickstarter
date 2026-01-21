@@ -1,0 +1,96 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+
+  @include on-tablet {
+    padding: 40px 0 142px;
+  }
+
+  @include on-desktop {
+    padding: 42px 0 90px;
+  }
+
+  &__logo {
+    display: block;
+    width: 161px;
+    height: 26px;
+
+    &:hover {
+      transform: $transition-scale;
+      transition: $transition-duration;
+    }
+  }
+
+  &__container {
+    @include page-grid;
+  }
+
+  &__content {
+    grid-column: 1 / -1;
+    order: 2;
+
+    @include on-tablet {
+      grid-column: 1 / 4;
+      order: 1;
+    }
+
+    @include on-desktop {
+      grid-column: 1 / 4;
+      order: 1;
+    }
+  }
+
+  &__title {
+    font-family: Inter, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    font-size: 40px;
+    line-height: 52px;
+    color: $c-dark-gray;
+
+    padding-bottom: 20px;
+
+    @include on-tablet {
+      font-size: 40px;
+      line-height: 64px;
+      padding-bottom: 30px;
+    }
+
+    @include on-desktop {
+      font-size: 62px;
+      line-height: 78px;
+    }
+  }
+
+  &__description {
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    color: $c-text-dark-gray;
+
+    @include on-tablet {
+      font-family: Inter, sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+    }
+  }
+
+  &__image {
+    grid-column: 1 / -1;
+    order: 1;
+
+    @include on-tablet {
+      grid-column: 4 / -1;
+      order: 2;
+    }
+
+    @include on-desktop {
+      grid-column: 5 / -1;
+      order: 2;
+    }
+  }
+}

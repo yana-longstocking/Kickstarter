@@ -6,14 +6,86 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Title</title>
+    <title>Kickstarter</title>
     <link
       rel="stylesheet"
       href="./styles/main.scss"
     />
   </head>
   <body>
-    <h1>Hello Mate Academy</h1>
+    <div class="container">
+      <div class="header">
+        <a href="/kickstarter/">
+          <img
+            class="header__logo"
+            src="./images/logo/logo.svg"
+            alt="kickstarter"
+          />
+        </a>
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a
+                href="#"
+                class="nav__link"
+              >
+                Specs
+              </a>
+            </li>
+            <li class="nav__item">
+              <span class="nav__lang">EN</span>
+              /
+              <a
+                href="#"
+                class="nav__lang"
+              >
+                UA
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#">
+                <button class="nav__button">Buy</button>
+              </a>
+            </li>
+
+            <li class="nav__item nav__item--burger">
+              <div
+                id="menu-toggle"
+                class="nav__target"
+              ></div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__container">
+        <div class="header__content">
+          <h1 class="header__title">Futuristic Wireless Speaker</h1>
+          <p class="header__description">
+            Luna’s performance is balanced and smooth in all frequency ranges
+            which makes the music both naturally pleasant and distinctly more
+            layered.
+          </p>
+        </div>
+        <div class="header__image">
+          <img
+            src="./images/img_Mobile/luna.png"
+            alt="luna"
+            class="header__image-img"
+            srcset="
+              ./images/img_Mobile/luna.png  320w,
+              ./images/img_Tablet/luna.png  429w,
+              ./images/img_Desktop/luna.png 816w
+            "
+            sizes="(min-width: 1280px) 816px,
+                   (min-width: 640px) 429px,
+                   320px"
+          />
+        </div>
+      </div>
+    </div>
+
     <script src="scripts/main.js"></script>
   </body>
 </html>
