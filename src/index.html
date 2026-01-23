@@ -13,6 +13,11 @@
     />
   </head>
   <body>
+    <input
+      type="checkbox"
+      id="menu-toggle"
+      class="menu-checkbox"
+    />
     <div class="container">
       <div class="header">
         <a href="/kickstarter/">
@@ -51,10 +56,10 @@
             </li>
 
             <li class="nav__item nav__item--burger">
-              <div
-                id="menu-toggle"
+              <label
+                for="menu-toggle"
                 class="nav__target"
-              ></div>
+              ></label>
             </li>
           </ul>
         </nav>
@@ -84,6 +89,77 @@
           />
         </div>
       </div>
+      <article class="header__article">
+        <label
+          for="menu-toggle"
+          class="header__article-close"
+        ></label>
+        <div class="header__article-wrapper">
+          <div class="header__article-header">
+            <a href="/kickstarter/">
+              <img
+                src="./images/logo/logo.svg"
+                alt="kickstarter"
+                class="header__logo"
+              />
+            </a>
+            <label
+              for="menu-toggle"
+              class="header__article-close-btn"
+            ></label>
+          </div>
+          <ul class="header__article-list">
+            <li class="header__article-item">
+              <a
+                href="#"
+                class="header__article-link"
+              >
+                Our story
+              </a>
+            </li>
+            <li class="header__article-item">
+              <a
+                href="#"
+                class="header__article-link"
+              >
+                About us
+              </a>
+            </li>
+            <li class="header__article-item">
+              <a
+                href="#"
+                class="header__article-link"
+              >
+                Features
+              </a>
+            </li>
+            <li class="header__article-item">
+              <a
+                href="#"
+                class="header__article-link"
+              >
+                Get in touch
+              </a>
+            </li>
+          </ul>
+          <div class="header__article-footer">
+            <div class="header__article-specs">
+              <span class="nav__link">Specs</span>
+              <span class="nav__lang">EN</span>
+              <span>/</span>
+              <a
+                href="#"
+                class="nav__lang"
+              >
+                UA
+              </a>
+            </div>
+            <a href="#">
+              <button class="nav__button">Buy</button>
+            </a>
+          </div>
+        </div>
+      </article>
     </div>
 
     <script src="scripts/main.js"></script>

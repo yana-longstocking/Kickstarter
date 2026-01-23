@@ -116,5 +116,11 @@
     background-position: center;
     cursor: pointer;
     align-items: center;
+
+    &:hover {
+      transform: $transition-scale;
+
+      transition: $transition-duration;
+    }
   }
 }
