@@ -1,0 +1,24 @@
+.presentation {
+  padding-bottom: 110px;
+
+  @include on-tablet {
+    padding-bottom: 140px;
+  }
+
+  @include on-desktop {
+    padding-bottom: 170px;
+  }
+
+  &__image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+    @include on-desktop {
+      width: auto;
+    }
+  }
+}
