@@ -20,7 +20,7 @@
     />
     <div class="container">
       <div class="header">
-        <a href="/kickstarter/">
+        <a href="#">
           <img
             class="header__logo"
             src="./images/logo/logo.svg"
@@ -321,9 +321,9 @@
         </div>
         <div class="technology__wrapper">
           <p class="technology__description">
-            "It really took me by surprise honestly to have such full beautiful
+            It really took me by surprise honestly to have such full beautiful
             sound that coming out of this small compact device. And with the
-            brush aluminum surface, it feels so familiar. Like my iPhone. "
+            brush aluminum surface, it feels so familiar. Like my iPhone.
           </p>
           <img
             src="./images/svg/avatar.svg"
@@ -332,6 +332,180 @@
           />
           <div class="technology__name">Garrett Martin</div>
           <div class="technology__position">Creative Director</div>
+        </div>
+      </section>
+    </div>
+
+    <div class="container">
+      <section class="features">
+        <h2 class="features__title">Features</h2>
+        <div class="features__wrapper">
+          <div class="features__left">
+            <h3 class="features__subtitle">Connectivity</h3>
+            <ul class="features__list">
+              <li class="features__item-list">Hands Free Wireless Audio</li>
+              <li class="features__item-list">Bluetooth 4.0 LE</li>
+              <li class="features__item-list">Wi-Fi 2.4 GHz (802.11 b/g/n)</li>
+              <li class="features__item-list">Smart Multiroom System Set Up</li>
+              <li class="features__item-list">
+                Party Mode with 6.0 Units and above
+              </li>
+              <li class="features__item-list">MESHNET Multi Speaker Network</li>
+            </ul>
+
+            <h3 class="features__subtitle">Sound & Music</h3>
+
+            <ul class="features__list">
+              <li class="features__item-list">Feel-in-chest Base Power</li>
+              <li class="features__item-list">
+                Lossless Digital Audio Transmission
+              </li>
+              <li class="features__item-list">Easy & Stable Stereo Pairing</li>
+              <li class="features__item-list">
+                Crisp and Clear High Frequency Sound
+              </li>
+              <li class="features__item-list">
+                Streams from Cloud Music and Local Library
+              </li>
+              <li class="features__item-list">
+                Auto Music from Last Song Stopped
+              </li>
+            </ul>
+          </div>
+
+          <div class="features__right">
+            <h3 class="features__subtitle">App Features</h3>
+            <ul class="features__list">
+              <li class="features__item-list">Customize Music Schedule</li>
+              <li class="features__item-list">Wake Up with Favorite Songs</li>
+              <li class="features__item-list">Home Detection Auto Wake Up</li>
+              <li class="features__item-list">Color Wheel</li>
+            </ul>
+
+            <div class="features__picture">
+              <img
+                src="./images/img_Mobile/luna_music.png"
+                alt="luna_music"
+                class="features__image"
+                srcset="
+                  ./images/img_Mobile/luna_music.png  318w,
+                  ./images/img_Tablet/luna_music.png  416w,
+                  ./images/img_Desktop/luna_music.png 543w
+                "
+                sizes="(min-width: 1280px) 543px,
+         (min-width: 640px) 416px,
+         318px"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="container">
+      <section class="questions">
+        <div class="questions__wrapper">
+          <div class="questions__left">
+            <h2 class="questions__title">Do you have any questions?</h2>
+          </div>
+
+          <div class="questions__right">
+            <form
+              onsubmit="this.reset(); return false;"
+              class="questions__form"
+            >
+              <input
+                type="email"
+                class="questions__input"
+                placeholder="Your email"
+                name="email"
+                required
+              />
+              <textarea
+                class="questions__textarea"
+                placeholder="Your message..."
+                name="message"
+                required
+              ></textarea>
+              <button
+                type="submit"
+                class="questions__button"
+              >
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="container">
+      <section class="footer">
+        <div class="footer__wrapper">
+          <div class="footer__content">
+            <div class="footer__left">
+              <a href="#">
+                <img
+                  src="./images/logo/logo.svg"
+                  alt="logo"
+                  class="footer__logo"
+                />
+              </a>
+            </div>
+
+            <div class="footer__right">
+              <a href="#">
+                <img
+                  src="./images/svg/arrow.svg"
+                  alt="arrow"
+                  class="footer__arrow"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__social">
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            class="footer__social-link"
+          >
+            <img
+              src="./images/svg/facebook.svg"
+              alt="facebook"
+              class="footer__social-icon"
+            />
+          </a>
+          <a
+            href="https://twitter.com/"
+            target="_blank"
+            class="footer__social-link"
+          >
+            <img
+              src="./images/svg/twitter.svg"
+              alt="twitter"
+              class="footer__social-icon"
+            />
+          </a>
+
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            class="footer__social-link"
+          >
+            <img
+              src="./images/svg/instagram.svg"
+              alt="instagram"
+              class="footer__social-icon"
+            />
+          </a>
+        </div>
+
+        <div class="footer__copyright">
+          <p class="footer__copyright-text">
+            &copy; 2019 All rights reserved. Terms of Use & Privacy Policy
+          </p>
         </div>
       </section>
     </div>
