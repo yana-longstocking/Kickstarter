@@ -2,23 +2,20 @@
   @include on-tablet {
     padding-bottom: 20px;
 
-   @include on-desktop {
-    padding-bottom: 30px;
-   }
+    @include on-desktop {
+      padding-bottom: 30px;
+    }
   }
 
   &__wrapper {
     @include on-tablet {
       padding-bottom: 60px;
     }
-
-
   }
 
-
   &__content {
-   @include on-tablet {
-    display: flex;
+    @include on-tablet {
+      display: flex;
       align-items: center;
     }
   }
@@ -31,7 +28,6 @@
       margin-left: auto;
       margin-right: auto;
     }
-
   }
 
   &__right {
@@ -49,8 +45,6 @@
       width: 161px;
       height: 26px;
     }
-
-
 
     &:hover {
       transform: $transition-scale;
@@ -93,7 +87,6 @@
 
     @include on-desktop {
       gap: 40px;
-
     }
   }
 

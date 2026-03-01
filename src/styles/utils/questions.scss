@@ -1,119 +1,114 @@
 .questions {
-padding-bottom: 110px;
-
-@include on-tablet {
-  padding-bottom: 140px;
-}
-
-@include on-desktop {
-  padding-bottom: 170px;
-}
-
- &__wrapper {
-  @include page-grid;
- }
-
- &__left {
-  grid-column: 1 / -1;
+  padding-bottom: 110px;
 
   @include on-tablet {
-    grid-column: 1 / 5;
+    padding-bottom: 140px;
   }
 
   @include on-desktop {
-  grid-column: 1 / 6;
-  }
- }
-
- &__right {
-  grid-column: 1 / -1;
-
-  @include on-tablet {
-    grid-column: 5 / -1;
+    padding-bottom: 170px;
   }
 
-  @include on-desktop {
-    grid-column: 7 / -1;
-  }
- }
-
- &__form {
-  display: flex;
-  flex-direction: column;
-
-  gap: 20px;
-
-  @include on-desktop {
-    gap: 31px;
+  &__wrapper {
+    @include page-grid;
   }
 
- }
+  &__left {
+    grid-column: 1 / -1;
 
- &__title {
-  font-family: Inter, sans-serif;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 40px;
-  color: $c-dark-gray;
-  text-transform: uppercase;
-  margin-bottom: 27px;
+    @include on-tablet {
+      grid-column: 1 / 5;
+    }
 
-  @include on-tablet {
-    font-size: 36px;
-    line-height: 46px;
+    @include on-desktop {
+      grid-column: 1 / 6;
+    }
   }
 
-  @include on-desktop {
-    font-size: 56px;
-    line-height: 70px;
-  }
- }
+  &__right {
+    grid-column: 1 / -1;
 
- &__input {
-  font-family: Helvetica, sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 24px;
-  color: $c-dark-gray;
-  padding: 12px 20px;
-  border: 1px solid $c-gray-text;
-  outline: none;
-  transition: border-color $transition-duration ease;
+    @include on-tablet {
+      grid-column: 5 / -1;
+    }
 
-  &:focus {
-    border-color: $c-subtitle-features;
-
+    @include on-desktop {
+      grid-column: 7 / -1;
+    }
   }
 
-  &:invalid:not(:placeholder-shown)  {
-    border-color: #EB5757;
-    color: #EB5757;
-    background-color: $c-white;
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+
+    @include on-desktop {
+      gap: 31px;
+    }
   }
 
+  &__title {
+    font-family: Inter, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40px;
+    color: $c-dark-gray;
+    text-transform: uppercase;
+    margin-bottom: 27px;
 
-  @include on-tablet {
-    padding: 12px 30px;
+    @include on-tablet {
+      font-size: 36px;
+      line-height: 46px;
+    }
+
+    @include on-desktop {
+      font-size: 56px;
+      line-height: 70px;
+    }
   }
 
-  @include on-desktop {
-    padding: 12px 36px;
+  &__input {
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    color: $c-dark-gray;
+    padding: 12px 20px;
+    border: 1px solid $c-gray-text;
+    outline: none;
+    transition: border-color $transition-duration ease;
+
+    &:focus {
+      border-color: $c-subtitle-features;
+    }
+
+    &:invalid:not(:placeholder-shown) {
+      border-color: #eb5757;
+      color: #eb5757;
+      background-color: $c-white;
+    }
+
+    @include on-tablet {
+      padding: 12px 30px;
+    }
+
+    @include on-desktop {
+      padding: 12px 36px;
+    }
+
+    &::placeholder {
+      font-family: Inter, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      color: $c-text-gray;
+    }
   }
 
-
-  &::placeholder {
-  font-family: Inter, sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  color: $c-text-gray;
-
-  }
- }
-
- &__textarea {
-  border: 1px solid $c-gray-text;
-  padding: 12px 20px;
+  &__textarea {
+    border: 1px solid $c-gray-text;
+    padding: 12px 20px;
     font-family: Inter, sans-serif;
     font-size: 14px;
     font-weight: 500;
@@ -129,48 +124,46 @@ padding-bottom: 110px;
       border-color: $c-subtitle-features;
     }
 
-  @include on-tablet {
-    padding: 12px 30px;
-    height: 200px;
+    @include on-tablet {
+      padding: 12px 30px;
+      height: 200px;
+    }
+
+    @include on-desktop {
+      padding: 16px 36px;
+      height: 128px;
+    }
+
+    &::placeholder {
+      font-family: Inter, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      color: $c-text-gray;
+    }
   }
 
-  @include on-desktop {
-    padding: 16px 36px;
-    height: 128px;
-  }
-
-  &::placeholder {
+  &__button {
+    width: 102px;
+    height: 40px;
+    background-color: $c-link-green;
+    color: $c-white;
+    border: none;
     font-family: Inter, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    color: $c-text-gray;
- }
- }
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    cursor: pointer;
+    text-transform: uppercase;
 
- &__button {
-  width: 102px;
-  height: 40px;
-  background-color: $c-link-green;
-  color: $c-white;
-  border: none;
-  font-family: Inter, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 14px;
-  cursor: pointer;
-  text-transform: uppercase;
+    @include on-desktop {
+      width: 126px;
+      height: 48px;
+    }
 
-  @include on-desktop {
-    width: 126px;
-    height: 48px;
+    &:hover {
+      background-color: $c-subtitle-features;
+      transition: $transition-duration;
+    }
   }
-
-
-  &:hover {
-    background-color: $c-subtitle-features;
-    transition: $transition-duration;
-  }
-
- }
 }
