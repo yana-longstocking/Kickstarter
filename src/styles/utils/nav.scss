@@ -57,6 +57,10 @@
       font-weight: 400;
       line-height: 20px;
     }
+    &:hover {
+      color: $hover-button-color;
+      transition: $transition-duration;
+    }
   }
 
   &__lang {

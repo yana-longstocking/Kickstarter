@@ -8,19 +8,24 @@
     />
     <title>Kickstarter</title>
     <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./images/svg/favicon.svg"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./images/svg/favicon_1.svg"
+    />
+    <link
       rel="stylesheet"
       href="./styles/main.scss"
     />
   </head>
   <body>
-    <input
-      type="checkbox"
-      id="menu-toggle"
-      class="menu-checkbox"
-    />
     <div class="container">
       <div class="header">
-        <a href="#">
+        <a href="#kickstarter">
           <img
             class="header__logo"
             src="./images/logo/logo.svg"
@@ -32,17 +37,23 @@
           <ul class="nav__list">
             <li class="nav__item">
               <a
-                href="#"
+                href="#specs"
                 class="nav__link"
+                id="header-content"
               >
                 Specs
               </a>
             </li>
             <li class="nav__item">
-              <span class="nav__lang">EN</span>
+              <a
+                href="#en"
+                class="nav__lang"
+              >
+                EN
+              </a>
               /
               <a
-                href="#"
+                href="#ua"
                 class="nav__lang"
               >
                 UA
@@ -50,21 +61,24 @@
             </li>
 
             <li class="nav__item">
-              <a href="#">
+              <a href="#buy">
                 <button class="nav__button">Buy</button>
               </a>
             </li>
 
             <li class="nav__item nav__item--burger">
-              <label
-                for="menu-toggle"
+              <a
+                href="#menu"
                 class="nav__target"
-              ></label>
+              ></a>
             </li>
           </ul>
         </nav>
       </div>
-      <div class="header__container">
+      <div
+        class="header__container"
+        id="specs"
+      >
         <div class="header__content">
           <h1 class="header__title">Futuristic Wireless Speaker</h1>
           <p class="header__description">
@@ -89,37 +103,41 @@
           />
         </div>
       </div>
-      <article class="header__article">
-        <label
-          for="menu-toggle"
+      <article
+        class="header__article"
+        id="menu"
+      >
+        <a
+          href="#specs"
           class="header__article-close"
-        ></label>
+        ></a>
         <div class="header__article-wrapper">
           <div class="header__article-header">
-            <a href="/kickstarter/">
+            <a href="#specs">
               <img
                 src="./images/logo/logo.svg"
                 alt="kickstarter"
                 class="header__logo"
               />
             </a>
-            <label
-              for="menu-toggle"
+            <a
+              href="#"
               class="header__article-close-btn"
-            ></label>
+            ></a>
           </div>
           <ul class="header__article-list">
             <li class="header__article-item">
               <a
-                href="#"
+                href="#our-story"
                 class="header__article-link"
+                id="benefits"
               >
                 Our story
               </a>
             </li>
             <li class="header__article-item">
               <a
-                href="#"
+                href="#about-us"
                 class="header__article-link"
               >
                 About us
@@ -127,7 +145,7 @@
             </li>
             <li class="header__article-item">
               <a
-                href="#"
+                href="#features"
                 class="header__article-link"
               >
                 Features
@@ -135,7 +153,7 @@
             </li>
             <li class="header__article-item">
               <a
-                href="#"
+                href="#get-in-touch"
                 class="header__article-link"
               >
                 Get in touch
@@ -144,17 +162,22 @@
           </ul>
           <div class="header__article-footer">
             <div class="header__article-specs">
-              <span class="nav__link">Specs</span>
+              <a
+                href="#specs"
+                class="nav__link"
+              >
+                Specs
+              </a>
               <span class="nav__lang">EN</span>
               <span>/</span>
               <a
-                href="#"
+                href="#ua"
                 class="nav__lang"
               >
                 UA
               </a>
             </div>
-            <a href="#">
+            <a href="#buy">
               <button class="nav__button">Buy</button>
             </a>
           </div>
@@ -163,7 +186,10 @@
     </div>
 
     <div class="container">
-      <section class="benefits">
+      <section
+        class="benefits"
+        id="our-story"
+      >
         <div class="benefits__wrapper">
           <div class="benefits__card">
             <img
@@ -241,7 +267,10 @@
     </div>
 
     <div class="container">
-      <section class="about-us">
+      <section
+        class="about-us"
+        id="about-us"
+      >
         <div class="about-us__wrapper">
           <div class="about-us__content">
             <img
@@ -337,7 +366,10 @@
     </div>
 
     <div class="container">
-      <section class="features">
+      <section
+        class="features"
+        id="features"
+      >
         <h2 class="features__title">Features</h2>
 
         <input
@@ -532,7 +564,10 @@
     </div>
 
     <div class="container">
-      <section class="questions">
+      <section
+        class="questions"
+        id="get-in-touch"
+      >
         <div class="questions__wrapper">
           <div class="questions__left">
             <h2 class="questions__title">Do you have any questions?</h2>

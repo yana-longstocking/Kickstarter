@@ -13,6 +13,7 @@
 
   &__card {
     grid-column: 1 / -1;
+    transition: transform $transition-duration ease;
 
     @include on-tablet {
       grid-column: span 4;
@@ -21,6 +22,10 @@
 
     @include on-desktop {
       width: 100%;
+    }
+
+    &:hover {
+      transform: translateY(-8px);
     }
   }
 

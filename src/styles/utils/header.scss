@@ -129,6 +129,10 @@
     }
   }
 
+  &__article:target {
+    transform: translateX(0);
+  }
+
   &__article-close {
     position: absolute;
     top: 0;
@@ -191,6 +195,10 @@
       transform: $transition-scale;
       transition: $transition-duration;
     }
+  }
+
+  .header__article:target &__article-close-btn {
+    display: block;
   }
 
   &__article-list {
@@ -259,18 +267,4 @@
     text-transform: uppercase;
     padding-bottom: 132px;
   }
-}
-
-.menu-checkbox {
-  position: absolute;
-  opacity: 0;
-  pointer-events: none;
-}
-
-.menu-checkbox:checked ~ .container .header__article {
-  transform: translateX(0);
-}
-
-.menu-checkbox:checked ~ .container .header__article-close-btn {
-  display: block;
 }
