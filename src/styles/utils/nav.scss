@@ -1,0 +1,130 @@
+.nav {
+  display: flex;
+  align-items: center;
+
+  &__list {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    @include on-desktop {
+      gap: 30px;
+    }
+
+    @include on-desktop {
+      gap: 47px;
+    }
+  }
+
+  &__item {
+    font-family: Helvetica, sans-serif;
+    text-transform: uppercase;
+
+    @include on-tablet {
+      font-family: Inter, sans-serif;
+    }
+
+    &--burger {
+      display: block;
+
+      @include on-desktop {
+        display: none;
+      }
+    }
+
+    &:not(&--burger) {
+      display: none;
+
+      @include on-tablet {
+        display: block;
+      }
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 100%;
+
+    color: $c-text-dark-gray;
+
+    @include on-desktop {
+      font-weight: 400;
+      line-height: 20px;
+    }
+    &:hover {
+      color: $hover-button-color;
+      transition: $transition-duration;
+    }
+  }
+
+  &__lang {
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 400;
+    color: $c-color-text;
+    line-height: 18px;
+
+    &:hover {
+      color: $c-dark-gray;
+      transition: $transition-duration;
+    }
+
+    @include on-desktop {
+      line-height: 20px;
+      color: $c-text-gray;
+    }
+  }
+
+  &__button {
+    width: 260px;
+    height: 48px;
+    border: 1px solid $c-dark-gray;
+    background-color: $c-dark-gray;
+    text-transform: uppercase;
+    color: $c-white;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    cursor: pointer;
+
+    @include on-tablet {
+      width: 100px;
+    }
+
+    @include on-desktop {
+      width: 102px;
+      font-weight: 700;
+
+      line-height: 14px;
+    }
+
+    &:hover {
+      background-color: $hover-button-color;
+      transition: $transition-duration;
+    }
+  }
+
+  &__target {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url('../images/svg/Icon-Burger-menu.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    align-items: center;
+
+    &:hover {
+      transform: $transition-scale;
+
+      transition: $transition-duration;
+    }
+  }
+}
